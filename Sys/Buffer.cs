@@ -1,49 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace FileUtilizator
+namespace FileUtilizator.Sys;
+
+public class Buffer
 {
-    public enum TransferType { Copy, Cut }
+    private readonly List<string> _files = [];
+    private readonly List<string> _folders = [];
+    public TransferType Type { get; set; }
 
-    public class Buffer
+    public void AddFile(string name)
     {
-        private List<string> _files;
-        private List<string> _folders;
-        public TransferType Type { get; set; }
+        _files.Add(name);
+    }
 
-        public Buffer()
-        {
-            _files = new List<string>();
-            _folders = new List<string>();
-        }
+    public void AddFolder(string name)
+    {
+        _folders.Add(name);
+    }
 
-        public void AddFile(string name)
-        {
-            _files.Add(name);
-        }
+    public List<string> GetFiles()
+    {
+        return _files;
+    }
 
-        public void AddFolder(string name)
-        {
-            _folders.Add(name);
-        }
+    public List<string> GetFolders()
+    {
+        return _folders;
+    }
 
-        public List<string> GetFiles()
-        {
-            return _files;
-        }
-
-        public List<string> GetFolders()
-        {
-            return _folders;
-        }
-
-        public void Clear()
-        {
-            _files.Clear();
-            _folders.Clear();
-        }
+    public void Clear()
+    {
+        _files.Clear();
+        _folders.Clear();
     }
 }

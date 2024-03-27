@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace FileUtilizator.Sys;
 
-namespace FileUtilizator
+public enum Section
 {
-    public enum Section { Left, Right }
+    Left,
+    Right
 }

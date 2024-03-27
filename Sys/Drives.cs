@@ -1,32 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.IO;
 
-namespace FileUtilizator
+namespace FileUtilizator.Sys;
+
+public class Drives
 {
-    public class Drives
+    public List<DriveInfo> Disks { get; }
+
+    public Drives()
     {
-        public List<DriveInfo> Disks { get; set; }
+        Disks = [];
+        SetDrives();
+    }
 
-        public Drives()
-        {
-            Disks = new List<DriveInfo>();
-            SetDrives();
-        }
-
-        public void SetDrives()
-        {
-            Disks.Clear();
-            foreach (var i in DriveInfo.GetDrives())
-            {
-                if (i.IsReady)
-                {
-                    Disks.Add(i);
-                }
-            }
-        }
+    private void SetDrives()
+    {
+        Disks.Clear();
+        foreach (var i in DriveInfo.GetDrives())
+            if (i.IsReady)
+                Disks.Add(i);
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace FileUtilizator;
+namespace FileUtilizator.Sys;
 
 public static class Shell32
 {

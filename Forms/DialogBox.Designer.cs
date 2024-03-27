@@ -1,4 +1,4 @@
-﻿namespace FileUtilizator
+﻿namespace FileUtilizator.Forms
 {
     partial class DialogBox
     {

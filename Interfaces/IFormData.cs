@@ -1,7 +1,6 @@
-﻿namespace FileUtilizator
+﻿namespace FileUtilizator.Interfaces;
+
+public interface IFormData
 {
-    public interface IFormData
-    {
-        void ChangeDirectory(string newPath);
-    }
+    void ChangeDirectory(string newPath);
 }

@@ -1,4 +1,4 @@
-﻿namespace FileUtilizator;
+﻿namespace FileUtilizator.Sys;
 
 public enum RecycleFlags : uint
 {
