@@ -12,23 +12,14 @@ namespace FileUtilizator.Sys;
 
 public class FileManager
 {
-    public Drives Drives { get; }
-    public Section Section { get; set; }
-
-    private string LeftPath { get; }
-    private string RightPath { get; }
-
-    public DirectoryInfo LeftDirectory { get; private set; }
-    public DirectoryInfo RightDirectory { get; private set; }
-
-    private readonly ListView _leftListView;
-    private readonly ListView _rightListView;
+    private readonly Buffer _buffer;
 
     // icons
     private readonly List<ImageList> _leftImagelist;
-    private readonly List<ImageList> _rightImagelist;
 
-    private readonly Buffer _buffer;
+    private readonly ListView _leftListView;
+    private readonly List<ImageList> _rightImagelist;
+    private readonly ListView _rightListView;
 
     public FileManager(ListView left, ListView right,
         ImageList leftImg, ImageList rightImg,
@@ -60,6 +51,15 @@ public class FileManager
         SetUpListView(Section.Left);
         SetUpListView(Section.Right);
     }
+
+    public Drives Drives { get; }
+    public Section Section { get; set; }
+
+    private string LeftPath { get; }
+    private string RightPath { get; }
+
+    public DirectoryInfo LeftDirectory { get; private set; }
+    public DirectoryInfo RightDirectory { get; private set; }
 
     public void SetUpListView(Section s)
     {
@@ -249,7 +249,9 @@ public class FileManager
         var listView = Section == Section.Left ? _leftListView : _rightListView;
         var sourcePath = Section == Section.Left ? LeftDirectory.FullName : RightDirectory.FullName;
 
-        return (from ListViewItem item in listView.SelectedItems where item.Text != ".." select sourcePath + "\\" + item.Text).ToArray();
+        return (from ListViewItem item in listView.SelectedItems
+            where item.Text != ".."
+            select sourcePath + "\\" + item.Text).ToArray();
     }
 
     public void CopyFiles()

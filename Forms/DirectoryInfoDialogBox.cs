@@ -8,8 +8,8 @@ namespace FileUtilizator.Forms;
 
 public partial class DirectoryInfoDialogBox : Form
 {
-    private readonly DirectoryInfo _dirInfo;
     private readonly Counter _counter;
+    private readonly DirectoryInfo _dirInfo;
 
     public DirectoryInfoDialogBox(DirectoryInfo dirInfo)
     {

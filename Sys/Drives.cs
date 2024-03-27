@@ -5,13 +5,13 @@ namespace FileUtilizator.Sys;
 
 public class Drives
 {
-    public List<DriveInfo> Disks { get; }
-
     public Drives()
     {
         Disks = [];
         SetDrives();
     }
+
+    public List<DriveInfo> Disks { get; }
 
     private void SetDrives()
     {

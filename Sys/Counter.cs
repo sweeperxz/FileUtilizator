@@ -6,14 +6,14 @@ namespace FileUtilizator.Sys;
 
 public class Counter
 {
-    public int FilesCount { get; private set; }
-    public int DirectoriesCount { get; private set; }
-    public double FolderSize { get; private set; }
-
     public Counter()
     {
         FilesCount = DirectoriesCount = 0;
     }
+
+    public int FilesCount { get; private set; }
+    public int DirectoriesCount { get; private set; }
+    public double FolderSize { get; private set; }
 
     public void Count(DirectoryInfo dir)
     {

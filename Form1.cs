@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO;
-using System.Drawing;
 using System.Diagnostics;
+using System.IO;
+using System.Windows.Forms;
 using FileUtilizator.Forms;
 using FileUtilizator.Interfaces;
 using FileUtilizator.Sys;
@@ -18,11 +10,11 @@ namespace FileUtilizator;
 
 public partial class Form1 : Form, IFormData
 {
-    private FileManager _fileManager;
-    private DialogBox _dlgBox;
-    private SearchDialogBox _searchDlgBox;
+    private readonly DialogBox _dlgBox;
+    private readonly FileManager _fileManager;
     private DirectoryInfoDialogBox _dirInfoDlgBox;
     private FileInfoDialogBox _fileInfoDlgBox;
+    private SearchDialogBox _searchDlgBox;
 
     public Form1()
     {
@@ -48,6 +40,11 @@ public partial class Form1 : Form, IFormData
         comboBox1.SelectedIndexChanged += ComboBox1SelectedValueChanged;
         comboBox2.SelectedIndexChanged += ComboBox2SelectedValueChanged;
         UpdateLabels();
+    }
+
+    public void ChangeDirectory(string newPath)
+    {
+        _fileManager.ChangeDirectory(newPath, _fileManager.Section);
     }
 
     private void UpdateLabels()
@@ -133,7 +130,7 @@ public partial class Form1 : Form, IFormData
 
     private void CreateFolder(object sender, EventArgs e)
     {
-        if (!(_dlgBox.ShowDialog() == DialogResult.OK))
+        if (_dlgBox.ShowDialog() != DialogResult.OK)
             return;
 
         try
@@ -149,7 +146,7 @@ public partial class Form1 : Form, IFormData
 
     private void CreateFile(object sender, EventArgs e)
     {
-        if (!(_dlgBox.ShowDialog() == DialogResult.OK))
+        if (_dlgBox.ShowDialog() != DialogResult.OK)
             return;
 
         try
@@ -210,11 +207,6 @@ public partial class Form1 : Form, IFormData
         }
     }
 
-    public void ChangeDirectory(string newPath)
-    {
-        _fileManager.ChangeDirectory(newPath, _fileManager.Section);
-    }
-
     private void InfoDialogBox(object sender, EventArgs e)
     {
         var tmp = _fileManager.GetSelectedItem();
@@ -257,7 +249,7 @@ public partial class Form1 : Form, IFormData
 
         _fileManager.SetFilesToBuffer(path);
 
-        switch ((sender as ListView).Name)
+        switch ((sender as ListView)!.Name)
         {
             case "listView1":
                 _fileManager.PasteFiles(Section.Left);

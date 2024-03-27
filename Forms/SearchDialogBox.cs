@@ -10,8 +10,8 @@ namespace FileUtilizator.Forms;
 
 public partial class SearchDialogBox : Form
 {
-    private readonly Searcher _searcher;
     private readonly IFormData _parentForm;
+    private readonly Searcher _searcher;
 
     public SearchDialogBox(IFormData f)
     {

@@ -33,8 +33,8 @@ public class Searcher
                 }
                 else
                 {
-                    if (Regex.IsMatch(((file as FileInfo)!).Name, fileName))
-                        Results.Add(((file as FileInfo)!).FullName);
+                    if (Regex.IsMatch((file as FileInfo)!.Name, fileName))
+                        Results.Add((file as FileInfo)!.FullName);
                 }
         }
         catch (Exception)

@@ -4,8 +4,6 @@ namespace FileUtilizator.Forms;
 
 public partial class DialogBox : Form
 {
-    public string TextBox => textBox1.Text;
-
     public DialogBox(string text, string button1Name, string button2Name)
     {
         InitializeComponent();
@@ -13,4 +11,6 @@ public partial class DialogBox : Form
         button1.Text = button1Name;
         button2.Text = button2Name;
     }
+
+    public string TextBox => textBox1.Text;
 }

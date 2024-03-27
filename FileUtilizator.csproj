@@ -97,7 +97,7 @@
         <Compile Include="Sys\Searcher.cs"/>
         <Compile Include="Sys\Section.cs"/>
         <Compile Include="Sys\Shell32.cs"/>
-        <Compile Include="Sys\TransferType.cs" />
+        <Compile Include="Sys\TransferType.cs"/>
         <EmbeddedResource Include="Form1.resx">
             <DependentUpon>Form1.cs</DependentUpon>
         </EmbeddedResource>
@@ -194,6 +194,10 @@
     </ItemGroup>
     <ItemGroup>
         <Content Include="FileManagerIcon.ico"/>
+        <Content Include="README.md" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="assets\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 </Project>
