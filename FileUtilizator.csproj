@@ -8,11 +8,16 @@
         <OutputType>WinExe</OutputType>
         <RootNamespace>FileUtilizator</RootNamespace>
         <AssemblyName>FileUtilizator</AssemblyName>
-        <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
         <Deterministic>true</Deterministic>
         <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+
+        <SelfContained>true</SelfContained>
+        <PublishSingleFile>true</PublishSingleFile>
+        
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -92,6 +97,7 @@
         <Compile Include="Sys\Buffer.cs"/>
         <Compile Include="Sys\Counter.cs"/>
         <Compile Include="Sys\Drives.cs"/>
+        <Compile Include="Sys\FileExtenction.cs" />
         <Compile Include="Sys\FileManager.cs"/>
         <Compile Include="Sys\RecycleFlags.cs"/>
         <Compile Include="Sys\Searcher.cs"/>

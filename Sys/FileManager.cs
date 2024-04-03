@@ -175,6 +175,7 @@ public class FileManager
         fs.Close();
     }
 
+
     public void DeleteFiles()
     {
         DeleteFilesFromListView(_leftListView);
@@ -193,30 +194,12 @@ public class FileManager
             switch (item.Tag as string)
             {
                 case "Folder":
-                    Directory.Delete(filePath, true);
+                    new DirectoryInfo(filePath).RecursiveDeleteFolders(true);
                     break;
                 case "File":
                     if (File.Exists(filePath))
                     {
-                        using var fsInput = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-                        using var ms = new MemoryStream();
-                        using var aes = new AesManaged();
-                        aes.GenerateKey();
-                        aes.GenerateIV();
-                        var encryptor = aes.CreateEncryptor();
-
-                        using (var cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write))
-                        {
-                            fsInput.CopyTo(cs);
-                        }
-
-                        // close file stream
-                        fsInput.Close();
-
-                        File.WriteAllBytes(filePath, Array.Empty<byte>());
-
-                        File.Delete(filePath);
-                        Shell32.SHEmptyRecycleBin(IntPtr.Zero, null, RecycleFlags.SHERB_NOCONFIRMATION);
+                        new FileInfo(filePath).DeleteFile();
                     }
 
                     break;
@@ -236,12 +219,12 @@ public class FileManager
             return null;
         var item = listView.SelectedItems[0];
 
-        return (item.Tag as string) switch
+        return ((item.Tag as string) switch
         {
             "Folder" => new DirectoryInfo(sourcePath + "\\" + item.Text),
             "File" => new FileInfo(sourcePath + "\\" + item.Text),
             _ => null
-        };
+        })!;
     }
 
     public string[] GetSelectedItemsPath()

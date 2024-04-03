@@ -23,8 +23,8 @@
         #region Код, автоматически созданный конструктором форм Windows
 
         /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -38,8 +38,6 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.Сommands = new System.Windows.Forms.ToolStripMenuItem();
             this.поискФайлаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,9 +113,7 @@
             this.toolStripButton3,
             this.toolStripButton4,
             this.toolStripSeparator2,
-            this.toolStripButton5,
-            this.toolStripSeparator3,
-            this.toolStripButton6});
+            this.toolStripButton5});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(984, 31);
@@ -183,21 +179,6 @@
             this.toolStripButton5.Size = new System.Drawing.Size(28, 28);
             this.toolStripButton5.Text = "Поиск";
             this.toolStripButton5.Click += new System.EventHandler(this.SearchFile);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
-            // 
-            // toolStripButton6
-            // 
-            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Image = global::FileUtilizator.Images.notepad;
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(28, 28);
-            this.toolStripButton6.Text = "Блокнот";
-            this.toolStripButton6.Click += new System.EventHandler(this.OpenNotepad);
             // 
             // menuStrip1
             // 
@@ -353,7 +334,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(0, 1);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(54, 23);
+            this.comboBox1.Size = new System.Drawing.Size(54, 21);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.TabStop = false;
             // 
@@ -362,7 +343,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(59, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             // 
@@ -381,6 +362,7 @@
             this.columnHeader8});
             this.listView2.ContextMenuStrip = this.contextMenuStrip1;
             this.listView2.FullRowSelect = true;
+            this.listView2.HideSelection = false;
             this.listView2.LabelEdit = true;
             this.listView2.LargeImageList = this.imageList4;
             this.listView2.Location = new System.Drawing.Point(1, 67);
@@ -533,7 +515,7 @@
             // 
             this.Folder.Image = global::FileUtilizator.Images.addFolder;
             this.Folder.Name = "Folder";
-            this.Folder.Size = new System.Drawing.Size(165, 22);
+            this.Folder.Size = new System.Drawing.Size(164, 22);
             this.Folder.Text = "Папку";
             this.Folder.Click += new System.EventHandler(this.CreateFolder);
             // 
@@ -541,7 +523,7 @@
             // 
             this.TxtFile.Image = global::FileUtilizator.Images.addFile;
             this.TxtFile.Name = "TxtFile";
-            this.TxtFile.Size = new System.Drawing.Size(165, 22);
+            this.TxtFile.Size = new System.Drawing.Size(164, 22);
             this.TxtFile.Text = "Текстовый файл";
             this.TxtFile.Click += new System.EventHandler(this.CreateFile);
             // 
@@ -576,7 +558,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(0, 1);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(54, 23);
+            this.comboBox2.Size = new System.Drawing.Size(54, 21);
             this.comboBox2.TabIndex = 3;
             this.comboBox2.TabStop = false;
             // 
@@ -586,7 +568,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(60, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "label1";
             // 
@@ -597,7 +579,7 @@
             this.textBox1.Location = new System.Drawing.Point(3, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(485, 22);
+            this.textBox1.Size = new System.Drawing.Size(485, 20);
             this.textBox1.TabIndex = 5;
             this.textBox1.TabStop = false;
             // 
@@ -608,7 +590,7 @@
             this.textBox2.Location = new System.Drawing.Point(1, 37);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(482, 22);
+            this.textBox2.Size = new System.Drawing.Size(482, 20);
             this.textBox2.TabIndex = 5;
             this.textBox2.TabStop = false;
             // 
@@ -645,6 +627,7 @@
             this.columnHeader4});
             this.listView1.ContextMenuStrip = this.contextMenuStrip1;
             this.listView1.FullRowSelect = true;
+            this.listView1.HideSelection = false;
             this.listView1.LabelEdit = true;
             this.listView1.LargeImageList = this.imageList3;
             this.listView1.Location = new System.Drawing.Point(3, 67);
@@ -702,14 +685,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 647);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -750,8 +733,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2;

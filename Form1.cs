@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using FileUtilizator.Forms;
@@ -19,6 +18,7 @@ public partial class Form1 : Form, IFormData
     public Form1()
     {
         InitializeComponent();
+        
         _dlgBox = new DialogBox("Введите имя", "Отмена", "Подтвердить");
 
         listView1.GotFocus += LeftListViewGotFocus;
@@ -40,6 +40,7 @@ public partial class Form1 : Form, IFormData
         comboBox1.SelectedIndexChanged += ComboBox1SelectedValueChanged;
         comboBox2.SelectedIndexChanged += ComboBox2SelectedValueChanged;
         UpdateLabels();
+        _fileManager.SetUpListView(Section.Left);
     }
 
     public void ChangeDirectory(string newPath)
@@ -82,11 +83,6 @@ public partial class Form1 : Form, IFormData
     private void ChangeViewMode(object sender, EventArgs e)
     {
         _fileManager.ChangeViewMode((sender as ToolStripMenuItem).Tag as string);
-    }
-
-    private void OpenNotepad(object sender, EventArgs e)
-    {
-        Process.Start("notepad.exe");
     }
 
     private void RefreshFiles(object sender, EventArgs e)
