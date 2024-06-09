@@ -74,7 +74,7 @@
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DialogBox";
-            this.Text = "Введите имя";
+            this.Text = "Введіть ім\'я";
             this.ResumeLayout(false);
             this.PerformLayout();
 

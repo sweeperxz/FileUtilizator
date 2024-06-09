@@ -80,9 +80,9 @@
             this.checkBox2.Enabled = false;
             this.checkBox2.Location = new System.Drawing.Point(106, 249);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(121, 17);
+            this.checkBox2.Size = new System.Drawing.Size(123, 17);
             this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Только для чтения";
+            this.checkBox2.Text = "Тільки для читання";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -91,9 +91,9 @@
             this.checkBox1.Enabled = false;
             this.checkBox1.Location = new System.Drawing.Point(106, 226);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(72, 17);
+            this.checkBox1.Size = new System.Drawing.Size(87, 17);
             this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Скрытый";
+            this.checkBox1.Text = "Прихований";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label4
@@ -101,45 +101,45 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 226);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Атрибуты:";
+            this.label4.Text = "Атрибути:";
             // 
             // filesCountLabel
             // 
             this.filesCountLabel.AutoSize = true;
             this.filesCountLabel.Location = new System.Drawing.Point(102, 194);
             this.filesCountLabel.Name = "filesCountLabel";
-            this.filesCountLabel.Size = new System.Drawing.Size(84, 13);
+            this.filesCountLabel.Size = new System.Drawing.Size(93, 13);
             this.filesCountLabel.TabIndex = 2;
-            this.filesCountLabel.Text = "Идет подсчет...";
+            this.filesCountLabel.Text = "Йде підрахунок...";
             // 
             // sizeLabel
             // 
             this.sizeLabel.AutoSize = true;
             this.sizeLabel.Location = new System.Drawing.Point(103, 169);
             this.sizeLabel.Name = "sizeLabel";
-            this.sizeLabel.Size = new System.Drawing.Size(84, 13);
+            this.sizeLabel.Size = new System.Drawing.Size(93, 13);
             this.sizeLabel.TabIndex = 2;
-            this.sizeLabel.Text = "Идет подсчет...";
+            this.sizeLabel.Text = "Йде підрахунок...";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 194);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 13);
+            this.label7.Size = new System.Drawing.Size(52, 13);
             this.label7.TabIndex = 2;
-            this.label7.Text = "Содержит: ";
+            this.label7.Text = "Містить: ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 169);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.Size = new System.Drawing.Size(48, 13);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Размер: ";
+            this.label5.Text = "Розмір: ";
             // 
             // createdLabel
             // 
@@ -155,9 +155,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 141);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Создан:";
+            this.label3.Text = "Створено:";
             // 
             // locationLabel
             // 
@@ -173,9 +173,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Расположение:";
+            this.label2.Text = "Розташування:";
             // 
             // label6
             // 
@@ -184,7 +184,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(97, 13);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Папка с файлами";
+            this.label6.Text = "Папка з файлами";
             // 
             // label1
             // 
@@ -250,7 +250,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DirectoryInfoDialogBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Информация";
+            this.Text = "Інформація";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -127,7 +127,7 @@
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
-            this.toolStripButton1.Text = "Обновить";
+            this.toolStripButton1.Text = "Оновити";
             this.toolStripButton1.Click += new System.EventHandler(this.RefreshFiles);
             // 
             // toolStripSeparator1
@@ -142,7 +142,7 @@
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(28, 28);
-            this.toolStripButton2.Text = "Копировать";
+            this.toolStripButton2.Text = "Копіювати";
             this.toolStripButton2.Click += new System.EventHandler(this.CopyFiles);
             // 
             // toolStripButton3
@@ -152,7 +152,7 @@
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(28, 28);
-            this.toolStripButton3.Text = "Вставить";
+            this.toolStripButton3.Text = "Вставити";
             this.toolStripButton3.Click += new System.EventHandler(this.PasteFiles);
             // 
             // toolStripButton4
@@ -162,7 +162,7 @@
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(28, 28);
-            this.toolStripButton4.Text = "Удалить";
+            this.toolStripButton4.Text = "Видалити";
             this.toolStripButton4.Click += new System.EventHandler(this.DeleteFiles);
             // 
             // toolStripSeparator2
@@ -177,7 +177,7 @@
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(28, 28);
-            this.toolStripButton5.Text = "Поиск";
+            this.toolStripButton5.Text = "Пошук";
             this.toolStripButton5.Click += new System.EventHandler(this.SearchFile);
             // 
             // menuStrip1
@@ -203,15 +203,15 @@
             this.переименоватьToolStripMenuItem,
             this.обновитьToolStripMenuItem});
             this.Сommands.Name = "Сommands";
-            this.Сommands.Size = new System.Drawing.Size(70, 20);
-            this.Сommands.Text = "Команды";
+            this.Сommands.Size = new System.Drawing.Size(68, 20);
+            this.Сommands.Text = "Команди";
             // 
             // поискФайлаToolStripMenuItem
             // 
             this.поискФайлаToolStripMenuItem.Image = global::FileUtilizator.Images.search;
             this.поискФайлаToolStripMenuItem.Name = "поискФайлаToolStripMenuItem";
-            this.поискФайлаToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.поискФайлаToolStripMenuItem.Text = "Поиск файлов";
+            this.поискФайлаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.поискФайлаToolStripMenuItem.Text = "Пошук файлів";
             this.поискФайлаToolStripMenuItem.Click += new System.EventHandler(this.SearchFile);
             // 
             // создатьПапкуToolStripMenuItem
@@ -219,8 +219,8 @@
             this.создатьПапкуToolStripMenuItem.Image = global::FileUtilizator.Images.addFolder;
             this.создатьПапкуToolStripMenuItem.Name = "создатьПапкуToolStripMenuItem";
             this.создатьПапкуToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
-            this.создатьПапкуToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.создатьПапкуToolStripMenuItem.Text = "Создать папку";
+            this.создатьПапкуToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.создатьПапкуToolStripMenuItem.Text = "Створити папку";
             this.создатьПапкуToolStripMenuItem.Click += new System.EventHandler(this.CreateFolder);
             // 
             // создатьФайлToolStripMenuItem
@@ -228,8 +228,8 @@
             this.создатьФайлToolStripMenuItem.Image = global::FileUtilizator.Images.addFile;
             this.создатьФайлToolStripMenuItem.Name = "создатьФайлToolStripMenuItem";
             this.создатьФайлToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.создатьФайлToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.создатьФайлToolStripMenuItem.Text = "Создать файл";
+            this.создатьФайлToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.создатьФайлToolStripMenuItem.Text = "Створити файл";
             this.создатьФайлToolStripMenuItem.Click += new System.EventHandler(this.CreateFile);
             // 
             // удалитьToolStripMenuItem
@@ -237,8 +237,8 @@
             this.удалитьToolStripMenuItem.Image = global::FileUtilizator.Images.delete;
             this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
             this.удалитьToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.удалитьToolStripMenuItem.Text = "Удалить";
+            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.удалитьToolStripMenuItem.Text = "Видалити";
             this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.DeleteFiles);
             // 
             // переместитьToolStripMenuItem
@@ -246,8 +246,8 @@
             this.переместитьToolStripMenuItem.Image = global::FileUtilizator.Images.cut;
             this.переместитьToolStripMenuItem.Name = "переместитьToolStripMenuItem";
             this.переместитьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.переместитьToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.переместитьToolStripMenuItem.Text = "Вырезать";
+            this.переместитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.переместитьToolStripMenuItem.Text = "Вирізати";
             this.переместитьToolStripMenuItem.Click += new System.EventHandler(this.CutFiles);
             // 
             // копироватьToolStripMenuItem
@@ -255,8 +255,8 @@
             this.копироватьToolStripMenuItem.Image = global::FileUtilizator.Images.copy;
             this.копироватьToolStripMenuItem.Name = "копироватьToolStripMenuItem";
             this.копироватьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.копироватьToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.копироватьToolStripMenuItem.Text = "Копировать";
+            this.копироватьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.копироватьToolStripMenuItem.Text = "Копіювати";
             this.копироватьToolStripMenuItem.Click += new System.EventHandler(this.CopyFiles);
             // 
             // переименоватьToolStripMenuItem
@@ -264,8 +264,8 @@
             this.переименоватьToolStripMenuItem.Image = global::FileUtilizator.Images.paste;
             this.переименоватьToolStripMenuItem.Name = "переименоватьToolStripMenuItem";
             this.переименоватьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.переименоватьToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.переименоватьToolStripMenuItem.Text = "Вставить";
+            this.переименоватьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.переименоватьToolStripMenuItem.Text = "Вставити";
             this.переименоватьToolStripMenuItem.Click += new System.EventHandler(this.PasteFiles);
             // 
             // обновитьToolStripMenuItem
@@ -273,8 +273,8 @@
             this.обновитьToolStripMenuItem.Image = global::FileUtilizator.Images.refresh;
             this.обновитьToolStripMenuItem.Name = "обновитьToolStripMenuItem";
             this.обновитьToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.обновитьToolStripMenuItem.Text = "Обновить";
+            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.обновитьToolStripMenuItem.Text = "Оновити";
             // 
             // ViewMode
             // 
@@ -291,7 +291,7 @@
             this.List1.Image = global::FileUtilizator.Images.list;
             this.List1.Name = "List1";
             this.List1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
-            this.List1.Size = new System.Drawing.Size(210, 22);
+            this.List1.Size = new System.Drawing.Size(197, 22);
             this.List1.Tag = "List";
             this.List1.Text = "Список";
             this.List1.Click += new System.EventHandler(this.ChangeViewMode);
@@ -301,9 +301,9 @@
             this.Details1.Image = global::FileUtilizator.Images.details;
             this.Details1.Name = "Details1";
             this.Details1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F2)));
-            this.Details1.Size = new System.Drawing.Size(210, 22);
+            this.Details1.Size = new System.Drawing.Size(197, 22);
             this.Details1.Tag = "Details";
-            this.Details1.Text = "Таблица";
+            this.Details1.Text = "Таблиця";
             this.Details1.Click += new System.EventHandler(this.ChangeViewMode);
             // 
             // LargeIcon1
@@ -311,9 +311,9 @@
             this.LargeIcon1.Image = global::FileUtilizator.Images.largeIcons;
             this.LargeIcon1.Name = "LargeIcon1";
             this.LargeIcon1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F3)));
-            this.LargeIcon1.Size = new System.Drawing.Size(210, 22);
+            this.LargeIcon1.Size = new System.Drawing.Size(197, 22);
             this.LargeIcon1.Tag = "LargeIcon";
-            this.LargeIcon1.Text = "Крупные значки";
+            this.LargeIcon1.Text = "Великі значки";
             this.LargeIcon1.Click += new System.EventHandler(this.ChangeViewMode);
             // 
             // imageList3
@@ -411,7 +411,7 @@
             this.toolStripSeparator4,
             this.Info});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(144, 230);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(185, 252);
             // 
             // View
             // 
@@ -421,23 +421,23 @@
             this.Details});
             this.View.Image = global::FileUtilizator.Images.view;
             this.View.Name = "View";
-            this.View.Size = new System.Drawing.Size(143, 26);
+            this.View.Size = new System.Drawing.Size(184, 26);
             this.View.Text = "Вид";
             // 
             // LargeIcon
             // 
             this.LargeIcon.Image = global::FileUtilizator.Images.largeIcons;
             this.LargeIcon.Name = "LargeIcon";
-            this.LargeIcon.Size = new System.Drawing.Size(164, 22);
+            this.LargeIcon.Size = new System.Drawing.Size(155, 26);
             this.LargeIcon.Tag = "LargeIcon";
-            this.LargeIcon.Text = "Крупные значки";
+            this.LargeIcon.Text = "Великі значки";
             this.LargeIcon.Click += new System.EventHandler(this.ChangeViewMode);
             // 
             // List
             // 
             this.List.Image = global::FileUtilizator.Images.list;
             this.List.Name = "List";
-            this.List.Size = new System.Drawing.Size(164, 22);
+            this.List.Size = new System.Drawing.Size(155, 26);
             this.List.Tag = "List";
             this.List.Text = "Список";
             this.List.Click += new System.EventHandler(this.ChangeViewMode);
@@ -446,29 +446,29 @@
             // 
             this.Details.Image = global::FileUtilizator.Images.details;
             this.Details.Name = "Details";
-            this.Details.Size = new System.Drawing.Size(164, 22);
+            this.Details.Size = new System.Drawing.Size(155, 26);
             this.Details.Tag = "Details";
-            this.Details.Text = "Таблица";
+            this.Details.Text = "Таблиця";
             this.Details.Click += new System.EventHandler(this.ChangeViewMode);
             // 
             // Refresh
             // 
             this.Refresh.Image = global::FileUtilizator.Images.refresh;
             this.Refresh.Name = "Refresh";
-            this.Refresh.Size = new System.Drawing.Size(143, 26);
-            this.Refresh.Text = "Обновить";
+            this.Refresh.Size = new System.Drawing.Size(184, 26);
+            this.Refresh.Text = "Оновити";
             this.Refresh.Click += new System.EventHandler(this.RefreshFiles);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(181, 6);
             // 
             // Delete
             // 
             this.Delete.Image = global::FileUtilizator.Images.delete;
             this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(143, 26);
+            this.Delete.Size = new System.Drawing.Size(184, 26);
             this.Delete.Text = "Удалить";
             this.Delete.Click += new System.EventHandler(this.DeleteFiles);
             // 
@@ -476,30 +476,30 @@
             // 
             this.Copy.Image = global::FileUtilizator.Images.copy;
             this.Copy.Name = "Copy";
-            this.Copy.Size = new System.Drawing.Size(143, 26);
-            this.Copy.Text = "Копировать";
+            this.Copy.Size = new System.Drawing.Size(184, 26);
+            this.Copy.Text = "Копіювати";
             this.Copy.Click += new System.EventHandler(this.CopyFiles);
             // 
             // Cut
             // 
             this.Cut.Image = global::FileUtilizator.Images.cut;
             this.Cut.Name = "Cut";
-            this.Cut.Size = new System.Drawing.Size(143, 26);
-            this.Cut.Text = "Вырезать";
+            this.Cut.Size = new System.Drawing.Size(184, 26);
+            this.Cut.Text = "Вирізати";
             this.Cut.Click += new System.EventHandler(this.CutFiles);
             // 
             // Paste
             // 
             this.Paste.Image = global::FileUtilizator.Images.paste;
             this.Paste.Name = "Paste";
-            this.Paste.Size = new System.Drawing.Size(143, 26);
-            this.Paste.Text = "Вставить";
+            this.Paste.Size = new System.Drawing.Size(184, 26);
+            this.Paste.Text = "Вставити";
             this.Paste.Click += new System.EventHandler(this.PasteFiles);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(181, 6);
             // 
             // Create
             // 
@@ -508,14 +508,14 @@
             this.TxtFile});
             this.Create.Image = global::FileUtilizator.Images.add;
             this.Create.Name = "Create";
-            this.Create.Size = new System.Drawing.Size(143, 26);
-            this.Create.Text = "Создать";
+            this.Create.Size = new System.Drawing.Size(184, 26);
+            this.Create.Text = "Створити";
             // 
             // Folder
             // 
             this.Folder.Image = global::FileUtilizator.Images.addFolder;
             this.Folder.Name = "Folder";
-            this.Folder.Size = new System.Drawing.Size(164, 22);
+            this.Folder.Size = new System.Drawing.Size(166, 26);
             this.Folder.Text = "Папку";
             this.Folder.Click += new System.EventHandler(this.CreateFolder);
             // 
@@ -523,21 +523,21 @@
             // 
             this.TxtFile.Image = global::FileUtilizator.Images.addFile;
             this.TxtFile.Name = "TxtFile";
-            this.TxtFile.Size = new System.Drawing.Size(164, 22);
-            this.TxtFile.Text = "Текстовый файл";
+            this.TxtFile.Size = new System.Drawing.Size(166, 26);
+            this.TxtFile.Text = "Текстовий файл";
             this.TxtFile.Click += new System.EventHandler(this.CreateFile);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(181, 6);
             // 
             // Info
             // 
             this.Info.Image = global::FileUtilizator.Images.info;
             this.Info.Name = "Info";
-            this.Info.Size = new System.Drawing.Size(143, 26);
-            this.Info.Text = "Свойства";
+            this.Info.Size = new System.Drawing.Size(184, 26);
+            this.Info.Text = "Властивості";
             this.Info.Click += new System.EventHandler(this.InfoDialogBox);
             // 
             // imageList4

@@ -58,7 +58,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 24);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Начать поиск";
+            this.button1.Text = "Почати пошук";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -103,18 +103,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Место поиска:";
+            this.label1.Text = "Місце пошуку:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.Size = new System.Drawing.Size(82, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Искать файлы:";
+            this.label2.Text = "Шукати файли:";
             // 
             // button3
             // 
@@ -126,7 +126,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 24);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Отмена";
+            this.button3.Text = "Скасування";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // SearchDialogBox

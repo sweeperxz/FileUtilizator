@@ -19,7 +19,7 @@ public partial class Form1 : Form, IFormData
     {
         InitializeComponent();
         
-        _dlgBox = new DialogBox("Введите имя", "Отмена", "Подтвердить");
+        _dlgBox = new DialogBox("Введіть ім'я", "Скасування", "Підтвердити");
 
         listView1.GotFocus += LeftListViewGotFocus;
         listView2.GotFocus += RightListViewGotFocus;
@@ -136,7 +136,7 @@ public partial class Form1 : Form, IFormData
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(ex.Message, "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 
@@ -152,13 +152,13 @@ public partial class Form1 : Form, IFormData
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(ex.Message, "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 
     private void DeleteFiles(object sender, EventArgs e)
     {
-        if (!(MessageBox.Show("Вы действительно хотите удалить эти объекты?", "Удаление", MessageBoxButtons.YesNo,
+        if (!(MessageBox.Show("Ви дійсно хочете видалити ці об'єкти?", "Видалення", MessageBoxButtons.YesNo,
                   MessageBoxIcon.Question)
               == DialogResult.Yes))
             return;
@@ -169,7 +169,7 @@ public partial class Form1 : Form, IFormData
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(ex.Message, "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 
@@ -239,7 +239,7 @@ public partial class Form1 : Form, IFormData
         else
             path = e.Data.GetData(typeof(string[])) as string[];
 
-        if (!(MessageBox.Show($"Вы действительно хотите скопировать {path.Length} элементов?", "Копирование",
+        if (!(MessageBox.Show($"Ви дійсно хочете скопіювати {path.Length} елементів?", "Копіювання",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
             return;
 

@@ -108,9 +108,9 @@
             this.checkBox2.Enabled = false;
             this.checkBox2.Location = new System.Drawing.Point(106, 274);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(121, 17);
+            this.checkBox2.Size = new System.Drawing.Size(123, 17);
             this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Только для чтения";
+            this.checkBox2.Text = "Тільки для читання";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -119,9 +119,9 @@
             this.checkBox1.Enabled = false;
             this.checkBox1.Location = new System.Drawing.Point(106, 251);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(72, 17);
+            this.checkBox1.Size = new System.Drawing.Size(87, 17);
             this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Скрытый";
+            this.checkBox1.Text = "Прихований";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label4
@@ -129,9 +129,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 251);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Атрибуты:";
+            this.label4.Text = "Атрибути:";
             // 
             // openedLabel
             // 
@@ -165,27 +165,27 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(3, 215);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 13);
+            this.label8.Size = new System.Drawing.Size(57, 13);
             this.label8.TabIndex = 2;
-            this.label8.Text = "Открыт: ";
+            this.label8.Text = "Відкрито: ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 189);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 13);
+            this.label7.Size = new System.Drawing.Size(54, 13);
             this.label7.TabIndex = 2;
-            this.label7.Text = "Изменен: ";
+            this.label7.Text = "Змінено: ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 137);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.Size = new System.Drawing.Size(48, 13);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Размер: ";
+            this.label5.Text = "Розмір: ";
             // 
             // createdLabel
             // 
@@ -201,9 +201,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 163);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Создан:";
+            this.label3.Text = "Створено:";
             // 
             // locationLabel
             // 
@@ -219,9 +219,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Расположение:";
+            this.label2.Text = "Розташування:";
             // 
             // typeLabel
             // 
@@ -237,9 +237,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Тип файла:";
+            this.label1.Text = "Тип файлу:";
             // 
             // pictureBox1
             // 
